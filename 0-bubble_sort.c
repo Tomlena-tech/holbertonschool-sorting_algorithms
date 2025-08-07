@@ -16,12 +16,18 @@ return;
 for (i < size, i++)
 for (j < size - i - 1; j++)
 {
-
-
-
-
-
-
-
+if (array[j] > array[j + 1])
+{
+temp = array[j];
+array[j] = array[j + 1];
+array[j + 1] = temp;
+swapp = 1;
+print_array(array, size);
+}
+}
+if (swapp == 0)
+break;
+}
+if (swapp == 0)
 return;
 }
