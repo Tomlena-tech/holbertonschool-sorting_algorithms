@@ -7,14 +7,17 @@
  */
 void bubble_sort(int *array, size_t size)
 {
-size_t i, j = 0;
-int temp = 0;
-int swapp = 0;
+size_t i, j;
+int temp;
+int swapp;
 
 if (array == NULL || size < 2)
 return;
-for (i < size, i++)
-for (j < size - i - 1; j++)
+for (i = 0; i < size; i++)
+{
+swapp = 0;
+
+for (j = 0; j < size - i - 1; j++)
 {
 if (array[j] > array[j + 1])
 {
@@ -25,9 +28,7 @@ swapp = 1;
 print_array(array, size);
 }
 }
-if (swapp == 0)
+if (swapp ==0)
 break;
 }
-if (swapp == 0)
-return;
 }
