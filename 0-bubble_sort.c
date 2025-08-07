@@ -28,7 +28,7 @@ swapp = 1;
 print_array(array, size);
 }
 }
-if (swapp ==0)
+if (swapp == 0)
 break;
 }
 }
